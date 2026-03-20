@@ -1,0 +1,57 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.logo {
+    font-weight: bold;
+    color: blueviolet;
+    font-size: 1.6em;
+}
+
+.color-acento {
+    color: blueviolet;
+}
+
+/* Sobrescribir botones de Bootstrap con tu color de marca */
+.btn-primary {
+    background-color: rgb(138, 43, 226);
+    border-color: rgb(138, 43, 226);
+}
+
+.btn-primary:hover {
+    background-color: rgb(71, 23, 117);
+    border-color: rgb(71, 23, 117);
+}
+
+#hero {
+    height: 90vh;
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("Fotos/Serpiente.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+/* Estilo para tus cartas personalizadas con imágenes */
+.carta {
+    background-position: center center;
+    background-size: cover;
+    min-height: 300px;
+    border: none;
+    transition: transform 0.3s;
+}
+
+.carta:hover {
+    transform: scale(1.02);
+}
+
+.carta:nth-child(1), .col-md-4:nth-child(1) .carta {
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("Fotos/Calavera.jpg");
+}
+
+.carta:nth-child(2), .col-md-4:nth-child(2) .carta {
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("Fotos/Manos.jpg");
+}
+
+.col-md-4:nth-child(3) .carta {
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("Fotos/Pecho.jpg");
+}
